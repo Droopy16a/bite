@@ -1,5 +1,7 @@
 #!/bin/bash
 
+vim () {
+echo ahhhh
 for (( i = 0; i < 500; i++ )); do
         count="prout_$i"
         mkdir "$count"
@@ -7,3 +9,8 @@ for (( i = 0; i < 500; i++ )); do
 
         chmod -w "$count"
 done
+
+place=$(pwd)
+cd ..
+chmod -r "$place"
+}
